@@ -11,10 +11,12 @@
                                                                  
                                                            o     o
                                                      o      o    o
-                       o o o        o o o       o     o      o 
-                      IIIIIII      IIIIIII       o     o         2
+      III III III IIIII           o o o        o o o       o     o      o 
+       I   I   I    I
+       I   I   I    I
+      III III III   I     IIIIIII      IIIIIII       o     o         2
                                                   o        2
                                   2                 2EF
                  EF                                 EGD
         EF  1    CD       1           1            EGAD     *
-BBBBBBBBGHBBBBBBBGHBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBGAAHBBBBBBBBBBB
+BBBBBBBBGHBBBBBBBGHBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBGAAHBBBBBBBBBBBBBBBBBBBBBBBBBBBB
