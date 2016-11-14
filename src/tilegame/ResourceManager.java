@@ -58,16 +58,31 @@ public class ResourceManager {
     public Image getFlippedImage(Image image) {
         return getScaledImage(image, 1, -1);
     }
+    public Image getBurstImage(Image image)
+    {
+        return getScaledImage(image, (float) 0.5,(float)0.5);
+    }
 
 
     private Image getScaledImage(Image image, float x, float y) {
 
         // set up the transform
         AffineTransform transform = new AffineTransform();
+        
         transform.scale(x, y);
+        if(x!=0.5)
         transform.translate(
             (x-1) * image.getWidth(null) / 2,
             (y-1) * image.getHeight(null) / 2);
+        if(y==0.5 && x==0.5)
+        {
+           
+                // thread to sleep for 1000 milliseconds
+            transform.translate(image.getWidth(null)/2,image.getHeight(null));
+             //transform.scale(0,0);
+          
+        }
+            
 
         // create a transparent (not translucent) image
         Image newImage = gc.createCompatibleImage(
@@ -258,6 +273,11 @@ public class ResourceManager {
             images[2][i] = getFlippedImage(images[0][i]);
             // right-facing "dead" images
             images[3][i] = getFlippedImage(images[1][i]);
+            if(i<3)
+            {
+                images[2][i] = getBurstImage(images[0][i]);
+                images[3][i] = getBurstImage(images[1][i]);
+            }
         }
 
         // create creature animations

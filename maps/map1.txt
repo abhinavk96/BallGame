@@ -10,13 +10,11 @@
 #   2       Bad Guy 2 (fly)
                                                                  
                                                            o     o
-                                                     o      o    o
-      III III III IIIII           o o o        o o o       o     o      o 
-       I   I   I    I
-       I   I   I    I
-      III III III   I     IIIIIII      IIIIIII       o     o         2
-                                                  o        2
-                                  2                 2EF
-                 EF                                 EGD
-        EF  1    CD       1           1            EGAD     *
+                                                     o      o    o           
+                       o o o        o o o       o     o      o               BB
+                      IIIIIII      IIIIIII       o     o         2          BBB
+                                                  o        2               BBBB
+                                  2                 2EF                   BBBBB
+                 EF                                 EGD                  BBBBBB
+        EF  1    CD       1           1            EGAD                 BBBBBBB  *                            
 BBBBBBBBGHBBBBBBBGHBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBGAAHBBBBBBBBBBBBBBBBBBBBBBBBBBBB
