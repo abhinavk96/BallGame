@@ -9,12 +9,12 @@
 #   1       Bad Guy 1 (grub)
 #   2       Bad Guy 2 (fly)
                                                                  
-                                                           o     o
-                                                     o      o    o           
-                       o o o        o o o       o     o      o               BB
-                      IIIIIII      IIIIIII       o     o         2          BBB
-                                                  o        2               BBBB
-                                  2                 2EF                   BBBBB
-                 EF                                 EGD                  BBBBBB
-        EF  1    CD       1           1            EGAD                 BBBBBBB  *                            
-BBBBBBBBGHBBBBBBBGHBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBGAAHBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+                                                           o     o                          2                                  2          
+                                                     o      o    o                                                                             EGB
+                       o o o        o o o       o     o      o               BB    BB                                                          EGB
+                      IIIIIII      IIIIIII       o     o         2          BBB    BBB                      IIIII   IIIII                      EGB          
+                                                  o        2               BBBB    BBBB                                                        EGB
+                                  2                 2EF                   BBBBB    BBBBB                      2                                EGB
+                 EF                                 EGD                  BBBBBB    BBBBBBB                                                     EGB
+        EF  1    CD       1           1            EGAD                 BBBBBBB    BBBBBBBB  *          1                 1                    EGAD
+BBBBBBBBGHBBBBBBBGHBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBGAAHBBBBBBBBBBBBBBBBBBBBBBBB    BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
