@@ -48,6 +48,7 @@ public static int level_flag=0;
 
     public void init() {
         super.init();
+        if(returnLevel()==0)
         new welcome().setVisible(true);
 
         // set up input manager
