@@ -5,8 +5,9 @@ import java.awt.geom.AffineTransform;
 import java.io.*;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
-
+import tilegame.GameManager.*;
 import graphics.*;
+import static tilegame.GameManager.returnLevel;
 import tilegame.sprites.*;
 
 
@@ -19,6 +20,7 @@ public class ResourceManager {
 
     private ArrayList tiles;
     private int currentMap;
+    private int level;
     private GraphicsConfiguration gc;
 
     // host sprites used for cloning
@@ -250,9 +252,12 @@ public class ResourceManager {
     public void loadCreatureSprites() {
 
         Image[][] images = new Image[4][];
+             level=returnLevel();
 
         // load left-facing images
+        if(level==0){
         images[0] = new Image[] {
+          
             loadImage("player1.png"),
             loadImage("player2.png"),
             loadImage("player3.png"),
@@ -261,7 +266,22 @@ public class ResourceManager {
             loadImage("fly3.png"),
             loadImage("grub1.png"),
             loadImage("grub2.png"),
+        };}
+        else
+        {
+            images[0] = new Image[] {
+          
+            loadImage("player1.png"),
+            loadImage("player2.png"),
+            loadImage("player3.png"),
+            loadImage("fly1.png"),
+            loadImage("fly1.png"),
+            loadImage("fly1.png"),
+            loadImage("fly1.png"),
+            loadImage("fly1.png"),
         };
+            
+        }
 
         images[1] = new Image[images[0].length];
         images[2] = new Image[images[0].length];
@@ -303,7 +323,7 @@ public class ResourceManager {
     }
 
 
-    private Animation createPlayerAnim(Image player1,
+    public Animation createPlayerAnim(Image player1,
         Image player2, Image player3)
     {
         Animation anim = new Animation();
@@ -317,7 +337,7 @@ public class ResourceManager {
     }
 
 
-    private Animation createFlyAnim(Image img1, Image img2,
+    public Animation createFlyAnim(Image img1, Image img2,
         Image img3)
     {
         Animation anim = new Animation();
@@ -329,7 +349,7 @@ public class ResourceManager {
     }
 
 
-    private Animation createGrubAnim(Image img1, Image img2) {
+    public Animation createGrubAnim(Image img1, Image img2) {
         Animation anim = new Animation();
         anim.addFrame(img1, 250);
         anim.addFrame(img2, 250);

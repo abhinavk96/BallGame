@@ -13,11 +13,11 @@ import sound.*;
 import input.*;
 import test.GameCore;
 import tilegame.sprites.*;
-
 /**
     GameManager manages all parts of the game.
 */
 public class GameManager extends GameCore {
+public static int level_flag=0;
 
     public static void main(String[] args) {
         new GameManager().run();
@@ -48,6 +48,7 @@ public class GameManager extends GameCore {
 
     public void init() {
         super.init();
+                new welcome().setVisible(true);
 
         // set up input manager
         initInput();
@@ -129,6 +130,10 @@ public class GameManager extends GameCore {
         }
 
     }
+  public static int returnLevel(){
+    
+        return level_flag;
+        }
 
 
     public void draw(Graphics2D g) {
@@ -415,7 +420,16 @@ public class GameManager extends GameCore {
             soundManager.play(prizeSound,
                 new EchoFilter(2000, .7f), false);
             map = resourceManager.loadNextMap();
+            level_flag++;
+            if(level_flag==1)
+            {
+                init();
+            renderer.setBackground(
+            resourceManager.loadImage("background2.jpg"));
+            resourceManager.loadCreatureSprites();
+            
+            }
         }
     }
-
+  
 }
