@@ -8,13 +8,13 @@
 #   *       Goal
 #   1       Bad Guy 1 (grub)
 #   2       Bad Guy 2 (fly)
-                                                                 
-                                                           o     o                          2                                  2          
-                                                     o      o    o                                                                             EGB
-                       o o o        o o o       o     o      o               BB    BB                                                          EGB
-                      IIIIIII      IIIIIII       o     o         2          BBB    BBB                      IIIII   IIIII                      EGB          
-                                                  o        2               BBBB    BBBB                                                        EGB
-                                  2                 2EF                   BBBBB    BBBBB                      2                                EGB
-                 EF                                 EGD                  BBBBBB    BBBBBBB                                                     EGB
-        EF  1    CD       1           1            EGAD                 BBBBBBB    BBBBBBBB  *          1                 1                    EGAD
-BBBBBBBBGHBBBBBBBGHBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBGAAHBBBBBBBBBBBBBBBBBBBBBBBB    BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+                                                                                                                                 EBAAAA        
+                                                           o     o                          2                       2            CAAAAA
+                       I  I  I  III                  o      o    o                                              o                CAAAAA
+                       I  I  I   I              o     o      o               EB    BF                           o                CAAAAA
+                       I  I  I   I               o     o         2          EAA    AAF           IIII      IIII o           *    CAAAAA
+                                                  o        2               EAAA    AAAF    III                  o          III   CAAAAA
+                                  2                 2EF                   EAAAA    AAAAF             2          o       III      CAAAAA
+                 EF                                 EGD                  EAAAAA    AAAAAF                       o    III         CAAAAA
+        EF  1    CD       1           1            EGAD                 EAAAAAA    AAAAAAF           1    1                      CAAAAA
+BBBBBBBBGHBBBBBBBGHBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBGAAHBBBBBBBBBBBBBBBBBAAAAAAA    AAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBAAAAAA
