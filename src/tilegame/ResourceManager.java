@@ -236,6 +236,8 @@ public class ResourceManager {
         // keep looking for tile A,B,C, etc. this makes it
         // easy to drop new tiles in the images/ directory
         tiles = new ArrayList();
+        level = returnLevel();
+        if(level==0){
         char ch = 'A';
         while (true) {
             String name = "tile_" + ch + ".png";
@@ -245,6 +247,19 @@ public class ResourceManager {
             }
             tiles.add(loadImage(name));
             ch++;
+        }}
+        else
+        {
+            char ch = 'A';
+        while (true) {
+            String name = "tile_" + ch + "2.png";
+            File file = new File("images/" + name);
+            if (!file.exists()) {
+                break;
+            }
+            tiles.add(loadImage(name));
+            ch++;
+        }
         }
     }
 
@@ -274,11 +289,11 @@ public class ResourceManager {
             loadImage("player1.png"),
             loadImage("player2.png"),
             loadImage("player3.png"),
-            loadImage("fly1.png"),
-            loadImage("fly1.png"),
-            loadImage("fly1.png"),
-            loadImage("fly1.png"),
-            loadImage("fly1.png"),
+            loadImage("flyS1.png"),
+            loadImage("flyS2.png"),
+            loadImage("flyS3.png"),
+            loadImage("grubS1.png"),
+            loadImage("grubS2.png"),
         };
             
         }

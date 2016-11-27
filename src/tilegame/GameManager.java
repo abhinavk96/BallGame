@@ -48,7 +48,7 @@ public static int level_flag=0;
 
     public void init() {
         super.init();
-                new welcome().setVisible(true);
+        new welcome().setVisible(true);
 
         // set up input manager
         initInput();
