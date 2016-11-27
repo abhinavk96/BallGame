@@ -430,6 +430,10 @@ public static int level_flag=0;
             resourceManager.loadCreatureSprites();
             
             }
+            if(level_flag==2)
+            {
+                renderer.setBackground(resourceManager.loadImage("background3.jpg"));
+            }
         }
     }
   
