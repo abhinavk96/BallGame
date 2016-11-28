@@ -18,6 +18,11 @@ import tilegame.sprites.*;
 */
 public class GameManager extends GameCore {
 public static int level_flag=0;
+public static int score=0;
+public static int returnScore()
+{
+    return score;
+}
 
     public static void main(String[] args) {
         new GameManager().run();
@@ -60,11 +65,31 @@ public static int level_flag=0;
 
         // load resources
         renderer = new TileMapRenderer();
+        if(returnLevel()==0)
         renderer.setBackground(
             resourceManager.loadImage("background.png"));
+               if(returnLevel()==1){
+        renderer.setBackground(
+            resourceManager.loadImage("background2.jpg"));
+                map = resourceManager.loadNextMap();
+                            resourceManager.loadCreatureSprites();
+                            resourceManager.loadTileImages();
+                            resourceManager.loadPowerUpSprites();
+
+        
+               }
+                      if(returnLevel()==2){
+        renderer.setBackground(
+            resourceManager.loadImage("background3.jpg"));
+                              map = resourceManager.loadNextMap();        map = resourceManager.loadNextMap();
+
+}
 
         // load first map
         map = resourceManager.loadNextMap();
+                                  resourceManager.loadCreatureSprites();
+                            resourceManager.loadTileImages();
+                            resourceManager.loadPowerUpSprites();
 
         // load sounds
         soundManager = new SoundManager(PLAYBACK_FORMAT);
@@ -381,6 +406,8 @@ public static int level_flag=0;
         Sprite collisionSprite = getSpriteCollision(player);
         if (collisionSprite instanceof PowerUp) {
             acquirePowerUp((PowerUp)collisionSprite);
+            score++;
+            
         }
         else if (collisionSprite instanceof Creature) {
             Creature badguy = (Creature)collisionSprite;
@@ -390,15 +417,18 @@ public static int level_flag=0;
                 badguy.setState(Creature.STATE_DYING);
                 player.setY(badguy.getY() - player.getHeight());
                 player.jump(true);
+                                score+=5;
+
             }
             else {
                 // player dies!
                 player.setState(Creature.STATE_DYING);
+                score =0;
             }
         }
     }
 
-
+   
     /**
         Gives the player the speicifed power up and removes it
         from the map.
@@ -431,9 +461,11 @@ public static int level_flag=0;
             
             }
             if(level_flag==2)
-            {
-                renderer.setBackground(resourceManager.loadImage("background3.jpg"));
-            }
+                init();
+//            if(level_flag==2)
+//            {
+//                renderer.setBackground(resourceManager.loadImage("background3.jpg"));
+//            }
         }
     }
   

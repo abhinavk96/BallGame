@@ -372,7 +372,7 @@ public class ResourceManager {
     }
 
 
-    private void loadPowerUpSprites() {
+    public void loadPowerUpSprites() {
         // create "goal" sprite
         Animation anim = new Animation();
         anim.addFrame(loadImage("heart1.png"), 150);

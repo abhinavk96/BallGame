@@ -50,19 +50,20 @@ public class welcome extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton2.setBackground(new java.awt.Color(51, 51, 51));
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Abhinav\\Documents\\NetBeansProjects\\ballGame\\video-play-3-xxl.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\AK\\Documents\\NetBeansProjects\\ballGame\\src\\tilegame\\video-play-3-xxl.png")); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 150, 390, 280));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 140, 390, 280));
         jButton2.setOpaque(false);
         jButton2.setContentAreaFilled(false);
         jButton2.setBorderPainted(false);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Abhinav\\Desktop\\backgroundMain.jpg")); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\AK\\Documents\\NetBeansProjects\\ballGame\\src\\backgroundMain.jpg")); // NOI18N
+        jLabel2.setPreferredSize(new java.awt.Dimension(1920, 1080));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -200, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

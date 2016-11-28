@@ -108,6 +108,7 @@ public class TileMapRenderer {
             int y = screenHeight - background.getHeight(null);
 
             g.drawImage(background, x, y, null);
+
         }
 
         // draw the visible tiles
@@ -130,7 +131,11 @@ public class TileMapRenderer {
         g.drawImage(player.getImage(),
             Math.round(player.getX()) + offsetX,
             Math.round(player.getY()) + offsetY,
-            null);
+            null);  
+                    g.setColor(Color.GRAY);
+                    g.setFont(new Font("TimesRoman",Font.PLAIN,40));
+                    g.drawString("Score:" +Integer.toString(GameManager.returnScore()),Math.round(player.getX()) + offsetX +10,
+            60);
 
         // draw sprites
         Iterator i = map.getSprites();
